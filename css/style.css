@@ -270,35 +270,59 @@ h2 {
 }
 
 .container-about {
-    background-color: #0f172a;
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    border-radius: 12px;
-    padding: 30px;
+    position: relative;
+    background: linear-gradient(145deg, #0d1322, #0b101d);
+    border: 1px solid rgba(0, 198, 255, 0.15);
+    border-radius: 16px;
+    padding: 40px 30px;
     max-width: 800px;
-    margin: 30px auto;
+    margin: 35px auto;
     text-align: center;
-
+    overflow: hidden;
     transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 .container-about:hover {
-    transform: translateY(-5px); 
-    border-color: #00c6ff;       
-    box-shadow: 0 10px 20px rgba(0, 198, 255, 0.1); 
+    transform: translateY(-5px);
+    border-color: rgba(0, 198, 255, 0.4);
+    box-shadow: 0 10px 30px rgba(0, 198, 255, 0.12);
+}
+
+.container-about::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 40%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #00c6ff, transparent);
 }
 
 .h3-about {
-    align-items: center;
-    margin-bottom: 20px;
     color: #00c6ff;
+  font-size: 1.8rem;
+  font-weight: 700;
+  letter-spacing: 0.8px;                                 /* Estilo moderno e espaçado */
+  margin-bottom: 20px;
+  /* Brilho Neon na medida: 1 camada próxima e 1 camada difusa moderada */
+  text-shadow: 
+    0 0 8px rgba(0, 198, 255, 0.6),
+    0 0 20px rgba(0, 198, 255, 0.25);
 }
 
 .text-about {
-    font-size: 16px;
-    line-height: 1.6;
-    margin-bottom: 15px;
-    align-items: center;
-    color: #cbd5e1;
+    color: #e2e8f0;                                         /* Texto claro de alta legibilidade */
+  font-size: 1.05rem;
+  line-height: 1.7;
+  letter-spacing: 0.2px;
+  margin-bottom: 15px;
+}
+
+.text-about .highlight {
+  color: #38bdf8;
+  font-weight: 600;
+  text-shadow: 0 0 6px rgba(56, 189, 248, 0.5);
 }
 
 .text-about:last-child {
