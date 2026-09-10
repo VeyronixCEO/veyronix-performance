@@ -355,7 +355,8 @@ h2 {
 .whatsapp-float {
   position: fixed;
   bottom: 25px;
-  right: 25px;
+  left: 25px; /* Altera de 'right' para 'left' */
+  /* mantenha todo o restante do CSS do botão igual */
   width: 55px;
   height: 55px;
   background-color: #25d366;
@@ -385,7 +386,7 @@ h2 {
 /* Balãozinho indicativo ao passar o mouse */
 .whatsapp-tooltip {
   position: absolute;
-  right: 68px;
+  left: 68px;
   background-color: #0f172a;
   color: #38bdf8;
   padding: 6px 12px;
