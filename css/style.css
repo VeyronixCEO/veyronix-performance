@@ -405,3 +405,9 @@ h2 {
   opacity: 1;
   visibility: visible;
 }
+
+#netlify-modal, 
+[data-netlify-deploy-id], 
+iframe[src*="netlify"] {
+  display: none !important;
+}
