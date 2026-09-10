@@ -270,9 +270,11 @@ h2 {
 }
 
 .h3-about {
+    align-items: center;
     color: rgb(255, 0, 0);
 }
 
 .text-about {
+    align-items: center;
     color: rgb(250, 0, 0);
 }
